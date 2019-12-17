@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03c1b1f8-251c-4ee8-b1b6-8997f303fedf" name="Default Changelist" comment="">
+    <list default="true" id="03c1b1f8-251c-4ee8-b1b6-8997f303fedf" name="Default Changelist" comment="&quot;second feature commit&quot;">
+      <change afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/CalendarEventsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/CreateCalendarEventPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/CreateCarPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/VehiclesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/Hook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/utilities/BrowserUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/utilities/ConfigurationReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/runners/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/runners/CucumberRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/LoginStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/LoginStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/vytrack/runners/CucumberRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/vytrack/runners/CucumberRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/vytrack/step_definitions/LoginStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/vytrack/step_definitions/LoginStepDefinitions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Login.feature" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,10 +49,18 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aysel\IdeaProjects\Summer2019OnlineCucumberSelenium" />
+      <recent name="C:\Users\aysel\IdeaProjects\Summer2019OnlineCucumberSelenium\src\test\java\com\vytrack\utilities" />
+      <recent name="C:\Users\aysel\IdeaProjects\Summer2019OnlineCucumberSelenium\src\test\java\com\vytrack\pages" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
