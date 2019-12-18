@@ -36,7 +36,7 @@ public class LoginStepDefinitions {
     public void user_verifies_that_page_subtitle_is_displayed(String string) {
         System.out.println(string);
         loginPage.waitUntilLoaderMaskDisappear();
-        BrowserUtils.wait(3);
+        BrowserUtils.wait(5);
         Assert.assertEquals(string, loginPage.getPageSubTitle());
         System.out.println("Verifying page subtitle: " + string);
     }
