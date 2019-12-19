@@ -37,18 +37,25 @@ public class LoginStepDefinitions {
         System.out.println(string);
         loginPage.waitUntilLoaderMaskDisappear();
         BrowserUtils.wait(2);
-       // Assert.assertEquals(string, loginPage.getPageSubTitle());
+        Assert.assertEquals(string, loginPage.getPageSubTitle());
         System.out.println("Verifying page subtitle: " + string);
     }
 
     @Then("user logs in as driver")
     public void user_logs_in_as_driver() {
         System.out.println("Login as driver");
+
+        String userName = ConfigurationReader.getProperty("driverUsername");
+        String password = ConfigurationReader.getProperty("password");
+        loginPage.login(userName, password);
     }
 
     @Then("user logs in as sales manager")
     public void user_logs_in_as_sales_manager() {
         System.out.println("Login as sales manager");
+        String userName = ConfigurationReader.getProperty("salesManagerUsername");
+        String password = ConfigurationReader.getProperty("password");
+        loginPage.login(userName, password);
     }
 
     //Then user enters "storemanager85" username and "wrong" password

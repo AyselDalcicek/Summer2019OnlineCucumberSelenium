@@ -1,4 +1,5 @@
 package com.vytrack.utilities;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -31,15 +32,16 @@ public class Driver {
             switch(browser){
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
-                        // We added it for speed
-//                        ChromeOptions chromeOptions = new ChromeOptions();  // //to configure chrome browser for tests
-//                        chromeOptions.setHeadless(false);   //to run tests without interface, set to true
-//                        driver = new ChromeDriver(chromeOptions);
+                    //to configure chrome browser for tests
                     driver = new ChromeDriver();
                     break;
-                case "chrome-headless":
+                case "chrome_headless":
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+                    //to configure chrome browser for tests
+                    ChromeOptions options = new ChromeOptions();
+                    //to run tests without interface, set to true
+                    options.setHeadless(true);
+                    driver = new ChromeDriver(options);
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
