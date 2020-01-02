@@ -64,6 +64,7 @@ public class LoginStepDefinitions {
     @Then("user enters {string} username and {string} password")
     public void user_enters_username_and_password(String string, String string2) {
         System.out.println("Login with "+string+ " username and "+string2+" password.");
+        loginPage.login(string,string2);
     }
 
     @Then("user verifies that {string} message is displayed")
@@ -79,6 +80,17 @@ public class LoginStepDefinitions {
     public void user_logs_in_as_driver_with_following_credentials(Map<String, String> dataTable) {
         System.out.println(dataTable);
         loginPage.login(dataTable.get("username"), dataTable.get("password"));
+    }
+
+    @Then("user logs in as {string}")
+    public void user_logs_in_as(String role) {
+        loginPage.login(role);
+    }
+
+    @Then("the page title should be {string}")
+    public void the_page_title_should_be(String string) {
+        BrowserUtils.waitForPageTitle(string);
+        Assert.assertEquals("Title is incorrect ",string, Driver.get().getTitle());
     }
 
 }

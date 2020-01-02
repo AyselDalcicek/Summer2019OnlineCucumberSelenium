@@ -7,12 +7,14 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features/activities",
+        features = "src/test/resources/features",
         glue = "com/vytrack/step_definitions",
         dryRun = false,
-        tags ="@driver_with_data_table",
+        tags ="@smoke_test",
         plugin = {"html:target/default-cucumber-reports",
-                 "json:target/cucumber.json"}
+                "json:target/cucumber.json",
+                "rerun:target/rerun.txt"
+        }
 )
 //        // tags = "@negative_test",  // Only those test are executed which has @negative_test annotation
 //        // tags = "~@negative_test" ,  // OR   "not @negative_test"    All tests will execute except those test  which has @negative_test annotation
