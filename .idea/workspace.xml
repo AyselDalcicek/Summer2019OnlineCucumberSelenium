@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="03c1b1f8-251c-4ee8-b1b6-8997f303fedf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/Hook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/utilities/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/activities/ClenderEvents.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/activities/ClenderEvents.feature" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RegressionRunner">
+  <component name="RunManager" selected="JUnit.CucumberRunner">
     <configuration name="CucumberRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Summer2019OnlineCucumberSelenium" />
       <extension name="coverage">
@@ -114,9 +114,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CucumberRunner" />
         <item itemvalue="JUnit.RegressionRunner" />
         <item itemvalue="JUnit.FailedRunner" />
-        <item itemvalue="JUnit.CucumberRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578203016768</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="&quot;added remote_chrome option &quot;">
+      <created>1579038802379</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1579038802380</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,7 +235,8 @@
     <MESSAGE value="&quot;Cucumber Scenario Outline commit &quot;" />
     <MESSAGE value="&quot;Cucumber Scenario Outline commit2 &quot;" />
     <MESSAGE value="&quot;Parallel testing &quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Parallel testing &quot;" />
+    <MESSAGE value="&quot;added remote_chrome option &quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;added remote_chrome option &quot;" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Summer2019OnlineCucumberSelenium$CucumberRunner.ic" NAME="CucumberRunner Coverage Results" MODIFIED="1577850617691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
