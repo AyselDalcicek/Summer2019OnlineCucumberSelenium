@@ -74,7 +74,7 @@
                         <include>**/CucumberRunner.java</include>
                         <include>**/FailedRunner.java</include>
                     </includes>
-                    <testFailureIgnore>false</testFailureIgnore>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
             <plugin>
@@ -118,17 +118,40 @@
                             <perCoreThreadCount>false</perCoreThreadCount>
                             <threadCountMethods>2</threadCountMethods>
 <!--                            we can run 2 browsers at the same time  / parallel-->
-
                             <includes>
                                 <include>**/RegressionRunner.java</include>
                             </includes>
-                            <testFailureIgnore>false</testFailureIgnore>
+                            <testFailureIgnore>true</testFailureIgnore>
                         </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>net.masterthought</groupId>
+                        <artifactId>maven-cucumber-reporting</artifactId>
+                        <version>4.9.0</version>
+                        <executions>
+                            <execution>
+                                <id>execution</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                                <configuration>
+                                    <projectName>Cucumber HTML Reports</projectName>
+                                    <outputDirectory>${project.build.directory}/regression</outputDirectory>
+                                    <inputDirectory>${project.build.directory}</inputDirectory>
+                                    <jsonFiles>
+                                        <param>**/cucumber*.json</param>
+                                    </jsonFiles>
+                                </configuration>
+                            </execution>
+                        </executions>
                     </plugin>
                 </plugins>
             </build>
         </profile>
     </profiles>
+
+
 
 
 </project>
