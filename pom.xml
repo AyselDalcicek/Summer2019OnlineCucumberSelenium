@@ -74,7 +74,7 @@
                         <include>**/CucumberRunner.java</include>
                         <include>**/FailedRunner.java</include>
                     </includes>
-                    <testFailureIgnore>true</testFailureIgnore>
+                    <testFailureIgnore>false</testFailureIgnore>
                 </configuration>
             </plugin>
             <plugin>
@@ -102,6 +102,7 @@
         </plugins>
     </build>
 
+
     <profiles>
         <profile>
             <id>Regression</id>
@@ -121,34 +122,13 @@
                             <includes>
                                 <include>**/RegressionRunner.java</include>
                             </includes>
-                            <testFailureIgnore>true</testFailureIgnore>
+                            <testFailureIgnore>false</testFailureIgnore>
                         </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>net.masterthought</groupId>
-                        <artifactId>maven-cucumber-reporting</artifactId>
-                        <version>4.9.0</version>
-                        <executions>
-                            <execution>
-                                <id>execution</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>generate</goal>
-                                </goals>
-                                <configuration>
-                                    <projectName>Cucumber HTML Reports</projectName>
-                                    <outputDirectory>${project.build.directory}/regression</outputDirectory>
-                                    <inputDirectory>${project.build.directory}</inputDirectory>
-                                    <jsonFiles>
-                                        <param>**/cucumber*.json</param>
-                                    </jsonFiles>
-                                </configuration>
-                            </execution>
-                        </executions>
                     </plugin>
                 </plugins>
             </build>
         </profile>
     </profiles>
+
 
 </project>

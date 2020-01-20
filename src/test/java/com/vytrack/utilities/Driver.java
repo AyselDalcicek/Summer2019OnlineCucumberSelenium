@@ -1,5 +1,6 @@
 package com.vytrack.utilities;
 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
@@ -12,15 +13,15 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
-
 import java.net.URL;
 
 public class Driver {
-
-    // Thread Local Driver
     private static ThreadLocal<WebDriver> driverPool = new ThreadLocal<>();
+
     private Driver() {
+
     }
+
     public static WebDriver get() {
         //if this thread doesn't have a web driver yet - create it and add to pool
         if (driverPool.get() == null) {
@@ -70,8 +71,8 @@ public class Driver {
                     try {
                         ChromeOptions chromeOptions = new ChromeOptions();
                         chromeOptions.setCapability("platform", Platform.ANY);
-                        driverPool.set(new RemoteWebDriver(new URL("http://ec2-54-173-79-151.compute-1.amazonaws.com:4444/wd/hub"), chromeOptions));
-                    } catch (Exception e) {                                 // // ec2-18-206-40-52.compute-1.amazonaws.com
+                        driverPool.set(new RemoteWebDriver(new URL("http://ec2-54-84-182-239.compute-1.amazonaws.com:4444/wd/hub"), chromeOptions));
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
                     break;
@@ -79,16 +80,19 @@ public class Driver {
                     try {
                         FirefoxOptions firefoxOptions = new FirefoxOptions();
                         firefoxOptions.setCapability("platform", Platform.ANY);
-                        driverPool.set(new RemoteWebDriver(new URL("http:ec2-54-173-79-151.compute-1.amazonaws.com:4444/wd/hub"), firefoxOptions));
-                    } catch (Exception e) {                                 // ec2-18-206-40-52.compute-1.amazonaws.com
-                        e.printStackTrace();                            //   http://ec2-18-206-40-52.compute-1.amazonaws.com:4444/wd/hub"
+                        driverPool.set(new RemoteWebDriver(new URL("http://ec2-54-84-182-239.compute-1.amazonaws.com:4444/wd/hub"), firefoxOptions));
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
                     break;
             }
+            //"http://ec2-54-166-190-92.compute-1.amazonaws.com:4444/wd/hub"
+
         }
         //return corresponded to thread id webdriver object
         return driverPool.get();
     }
+
     public static void close() {
         driverPool.get().quit();
         driverPool.remove();
