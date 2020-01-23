@@ -72,7 +72,7 @@ public class Driver {
                         ChromeOptions chromeOptions = new ChromeOptions();
                         chromeOptions.setCapability("platform", Platform.ANY);
                         driverPool.set(new RemoteWebDriver(new URL("http://ec2-54-84-182-239.compute-1.amazonaws.com:4444/wd/hub"), chromeOptions));
-                    } catch (Exception e) {                               // my IP         Cybertec IP -->  ec2-54-84-182-239.compute-1.amazonaws.com
+                    } catch (Exception e) {                               // my IP        Cybertec IP -->  ec2-54-84-182-239.compute-1.amazonaws.com
                         e.printStackTrace();
                     }
                     break;
