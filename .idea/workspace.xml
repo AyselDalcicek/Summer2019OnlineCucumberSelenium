@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03c1b1f8-251c-4ee8-b1b6-8997f303fedf" name="Default Changelist" comment="">
+    <list default="true" id="6fd4470c-90f5-468d-a164-9b0decd8dd06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/chromedriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/execution_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.git.ignore" beforeDir="false" afterPath="$PROJECT_DIR$/.git.ignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Summer2019OnlineCucumberSelenium.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/CalendarEventsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/CalendarEventsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/runners/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/runners/CucumberRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/ClendarEventsStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/ClendarEventsStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/Hook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/LoginStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/LoginStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrack/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SmokeTest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/SmokeTest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/activities/ClenderEvents.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/activities/ClenderEvents.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/vytrack/runners/CucumberRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/vytrack/runners/CucumberRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/vytrack/step_definitions/LoginStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/vytrack/step_definitions/LoginStepDefinitions.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="159" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,29 +43,18 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
-        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1V5FqLwVEJ02Ve93Z1YKO5hI33z" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1adqpFjM9P8aL6YdaUV7wzZbjFO" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/vytrack/pages" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\aysel\IdeaProjects\Summer2019OnlineCucumberSelenium\src\test\resources\features\fleet" />
-      <recent name="C:\Users\aysel\IdeaProjects\Summer2019OnlineCucumberSelenium\src\test\resources\features" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\aysel\IdeaProjects\Summer2019OnlineCucumberSelenium\src\test\java\com\vytrack\pages" />
-      <recent name="C:\Users\aysel\IdeaProjects\Summer2019OnlineCucumberSelenium\src\test\java\com\vytrack\utilities" />
-      <recent name="C:\Users\aysel\IdeaProjects\Summer2019OnlineCucumberSelenium" />
+      <recent name="C:\Users\aysel\IdeaProjects\Summer2019Online_CucumberSelenium\src\test\resources\features" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -65,212 +69,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CucumberRunner">
-    <configuration name="CucumberRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Summer2019OnlineCucumberSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.vytrack.runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.vytrack.runners" />
-      <option name="MAIN_CLASS_NAME" value="com.vytrack.runners.CucumberRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FailedRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Summer2019OnlineCucumberSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.vytrack.runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.vytrack.runners" />
-      <option name="MAIN_CLASS_NAME" value="com.vytrack.runners.FailedRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegressionRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Summer2019OnlineCucumberSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.vytrack.runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.vytrack.runners" />
-      <option name="MAIN_CLASS_NAME" value="com.vytrack.runners.RegressionRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.CucumberRunner" />
-        <item itemvalue="JUnit.RegressionRunner" />
-        <item itemvalue="JUnit.FailedRunner" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="03c1b1f8-251c-4ee8-b1b6-8997f303fedf" name="Default Changelist" comment="" />
-      <created>1576535238857</created>
+      <changelist id="6fd4470c-90f5-468d-a164-9b0decd8dd06" name="Default Changelist" comment="" />
+      <created>1587075999849</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576535238857</updated>
+      <updated>1587075999849</updated>
     </task>
-    <task id="LOCAL-00001" summary="&quot;first feature commit&quot;">
-      <created>1576600982306</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1576600982307</updated>
-    </task>
-    <task id="LOCAL-00002" summary="&quot;second feature commit&quot;">
-      <created>1576601674331</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1576601674331</updated>
-    </task>
-    <task id="LOCAL-00003" summary="&quot;first tests commit&quot;">
-      <created>1576620664559</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1576620664559</updated>
-    </task>
-    <task id="LOCAL-00004" summary="&quot;second commit&quot;">
-      <created>1576702162108</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1576702162108</updated>
-    </task>
-    <task id="LOCAL-00005" summary="&quot;third commit&quot;">
-      <created>1576719658962</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1576719658962</updated>
-    </task>
-    <task id="LOCAL-00006" summary="&quot;smoke test, and  report commit &quot;">
-      <created>1576782237773</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1576782237773</updated>
-    </task>
-    <task id="LOCAL-00007" summary="&quot;Cucumber data tables commit &quot;">
-      <created>1576885115579</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1576885115579</updated>
-    </task>
-    <task id="LOCAL-00008" summary="&quot;Cucumber Scenario Outline commit &quot;">
-      <created>1577978091024</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1577978091024</updated>
-    </task>
-    <task id="LOCAL-00009" summary="&quot;Cucumber Scenario Outline commit2 &quot;">
-      <created>1577978143212</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1577978143212</updated>
-    </task>
-    <task id="LOCAL-00010" summary="&quot;Parallel testing &quot;">
-      <created>1578203016768</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1578203016768</updated>
-    </task>
-    <task id="LOCAL-00011" summary="&quot;added remote_chrome option &quot;">
-      <created>1579038802379</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1579038802380</updated>
-    </task>
-    <task id="LOCAL-00012" summary="&quot;changed chrome option &quot;">
-      <created>1579224301374</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1579224301374</updated>
-    </task>
-    <task id="LOCAL-00013" summary="&quot;changed chrome option &quot;">
-      <created>1579224991824</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1579224991824</updated>
-    </task>
-    <task id="LOCAL-00014" summary="&quot;changed chrome option &quot;">
-      <created>1579225174309</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1579225174309</updated>
-    </task>
-    <task id="LOCAL-00015" summary="&quot;changed chrome option IP  &quot;">
-      <created>1579489089353</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1579489089353</updated>
-    </task>
-    <task id="LOCAL-00016" summary="&quot;Driver commit &quot;">
-      <created>1579496513583</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1579496513583</updated>
-    </task>
-    <task id="LOCAL-00017" summary="&quot;Driver commit &quot;">
-      <created>1579496993939</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1579496993939</updated>
-    </task>
-    <task id="LOCAL-00018" summary="&quot;browser has  changed commit &quot;">
-      <created>1579497669113</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1579497669113</updated>
-    </task>
-    <task id="LOCAL-00019" summary="&quot;browser has  changed commit &quot;">
-      <created>1579500016871</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1579500016871</updated>
-    </task>
-    <task id="LOCAL-00020" summary="&quot;browser has  changed commit &quot;">
-      <created>1579501449108</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1579501449108</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,31 +94,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="&quot;first feature commit&quot;" />
-    <MESSAGE value="&quot;second feature commit&quot;" />
-    <MESSAGE value="&quot;first tests commit&quot;" />
-    <MESSAGE value="&quot;second commit&quot;" />
-    <MESSAGE value="&quot;third commit&quot;" />
-    <MESSAGE value="&quot;smoke test, and  report commit &quot;" />
-    <MESSAGE value="&quot;Cucumber data tables commit &quot;" />
-    <MESSAGE value="&quot;Cucumber Scenario Outline commit &quot;" />
-    <MESSAGE value="&quot;Cucumber Scenario Outline commit2 &quot;" />
-    <MESSAGE value="&quot;Parallel testing &quot;" />
-    <MESSAGE value="&quot;added remote_chrome option &quot;" />
-    <MESSAGE value="&quot;changed chrome option &quot;" />
-    <MESSAGE value="&quot;changed chrome option IP  &quot;" />
-    <MESSAGE value="&quot;Driver commit &quot;" />
-    <MESSAGE value="&quot;browser has  changed commit &quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;browser has  changed commit &quot;" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Summer2019OnlineCucumberSelenium$CucumberRunner.ic" NAME="CucumberRunner Coverage Results" MODIFIED="1577850617691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.vytrack.runners.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Summer2019OnlineCucumberSelenium$FailedRunner.ic" NAME="FailedRunner Coverage Results" MODIFIED="1577862874146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.vytrack.runners.*</FILTER>
-    </SUITE>
   </component>
 </project>

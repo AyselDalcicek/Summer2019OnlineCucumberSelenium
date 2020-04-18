@@ -6,12 +6,13 @@ import com.vytrack.utilities.ConfigurationReader;
 import com.vytrack.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 
 import java.util.Map;
 
 public class LoginStepDefinitions {
-
+   // private static Logger logger = new Logger.getLogger(LoginStepDefinitions.class);
     // Write code here that turns the phrase above into concrete actions
       LoginPage loginPage = new LoginPage();  // created login page object
 

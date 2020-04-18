@@ -27,20 +27,20 @@ Feature: All calendar events
 #      Use Summer2019OnlineCucumberSelenium  or any other main project that you use for class
 #
 #      Put these methods under pages --> CalendarEventsPage class
-  ####################################
+#  ###################################
 # Than we created ( getListOfString method in BrowserUtils and
 #  getColumnNames() and getViewPerPageOptions() methods in CalendarEventsPage
 
-#
-#  @homework_4_1
-#  Scenario: Verify that view, edit and delete calendar options are displayed
-#    Given user is on the login page
-#    And user logs in as store manager
-#    Then user navigates to "Activities" then to "Calendar Events"
-#    And user verifies that following options are displayed for "Testers meeting" calendar event
-#      | Delete |
-#      | Edit   |
-#      | View   |
+
+  @homework_4_1
+  Scenario: Verify that view, edit and delete calendar options are displayed
+    Given user is on the login page
+    And user logs in as store manager
+    Then user navigates to "Activities" then to "Calendar Events"
+    And user verifies that following options are displayed for "Testers meeting" calendar event
+      | Delete |
+      | Edit   |
+      | View   |
 #
 #  @homework_4_2
 #  Scenario: Verify that "Title" column still displayed

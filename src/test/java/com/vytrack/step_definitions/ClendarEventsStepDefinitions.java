@@ -29,8 +29,6 @@ public class ClendarEventsStepDefinitions {
         Assert.assertEquals(dataTable, calendarEventsPage.getColumnNames());
     }
 
-
-    /*
         @Then("user verifies that following options are displayed for {string} calendar event")
     public void user_verifies_that_following_options_are_displayed_for_calendar_event(String title, List<String> dataTable) {
         calendarEventsPage.waitUntilLoaderMaskDisappear();
@@ -40,12 +38,15 @@ public class ClendarEventsStepDefinitions {
         }
     }
 
-    @Then("user {string} following grid options")
-    public void user_following_grid_options(String selectOrUnselect, List<String> dataTable) {
-        for (String gridOption : dataTable) {
-            calendarEventsPage.selectGridSettings(gridOption, selectOrUnselect);
-        }
-    }
+
+//    @Then("user {string} following grid options")
+//    public void user_following_grid_options(String selectOrUnselect, List<String> dataTable) {
+//        for (String gridOption : dataTable) {
+//            calendarEventsPage.selectGridSettings(gridOption, selectOrUnselect);
+//        }
+//    }
+
+     /*
 
     @Then("user should see following save and close options")
     public void user_should_see_following_save_and_close_options(List<String> dataTable) {
