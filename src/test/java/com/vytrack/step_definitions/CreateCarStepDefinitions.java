@@ -4,6 +4,7 @@ import com.vytrack.pages.CreateCarPage;
 import com.vytrack.pages.VehiclesPage;
 import com.vytrack.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 import java.util.Map;
@@ -32,6 +33,10 @@ public class CreateCarStepDefinitions {
 //    .get("Model Year") - get value of Model Year
         @Then("user adds new car information:")
         public void user_adds_new_car_information(List<Map<String, String>> dataTable) {
+//            System.out.println(dataTable.get(0).get("Driver"));  // it will return Test Driver
+//            System.out.println(dataTable.get(1).get("Driver"));  // it will return Super Driver
+//            System.out.println(dataTable.get(0).get("Location"));  // it will return Reston, VA
+
             //as many rows of data you have, it will create cars
             //wait
             createCarPage.waitUntilLoaderMaskDisappear();
@@ -55,7 +60,6 @@ public class CreateCarStepDefinitions {
 
                 BrowserUtils.wait(2);//for demo
                 row++;
-
             }
 
     }

@@ -41,7 +41,9 @@ public class Driver {
             switch (browser) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
+                    ChromeOptions chromeOptions = new ChromeOptions();
                     driverPool.set(new ChromeDriver());
+                    chromeOptions.addArguments("startmaximized");
                     break;
                 case "chrome_headless":
                     WebDriverManager.chromedriver().setup();

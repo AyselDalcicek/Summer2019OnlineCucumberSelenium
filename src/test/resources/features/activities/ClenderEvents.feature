@@ -1,10 +1,12 @@
 @calender_events
 Feature: All calendar events
 
-  Scenario: Verify column names
+  Background:
     Given user is on the login page
-    Then  user logs in as store manager
+    And user logs in as store manager
     Then user navigates to "Activities" then to "Calendar Events"
+
+  Scenario: Verify column names
     And user verifies that column names are displayed
       |TITLE            |
       |CALENDAR         |
@@ -34,19 +36,13 @@ Feature: All calendar events
 
   @homework_4_1
   Scenario: Verify that view, edit and delete calendar options are displayed
-    Given user is on the login page
-    And user logs in as store manager
-    Then user navigates to "Activities" then to "Calendar Events"
     And user verifies that following options are displayed for "Testers meeting" calendar event
       | Delete |
       | Edit   |
       | View   |
-#
+
 #  @homework_4_2
 #  Scenario: Verify that "Title" column still displayed
-#    Given user is on the login page
-#    And user logs in as store manager
-#    Then user navigates to "Activities" then to "Calendar Events"
 #    And user "deselects" following grid options
 #      | CALENDAR          |
 #      | START             |
@@ -56,18 +52,18 @@ Feature: All calendar events
 #      | INVITATION STATUS |
 #    Then user verifies that column names are displayed
 #      | TITLE |
-#
-#  @homework_4_3
-#  Scenario: Verify save and close drop-down
-#    Given user is on the login page
-#    And user logs in as store manager
-#    Then user navigates to "Activities" then to "Calendar Events"
-#    And user clicks on "Create Calendar Event" button
-#    Then user should see following save and close options
-#      | Save And Close |
-#      | Save And New   |
-#      | Save           |
-#
+
+  @homework_4_3
+  Scenario: Verify save and close drop-down
+    Given user is on the login page
+    And user logs in as store manager
+    Then user navigates to "Activities" then to "Calendar Events"
+    And user click on "Create Calendar Event" button
+    Then user should see following save and close options
+      | Save And Close |
+      | Save And New   |
+      | Save           |
+
 #  @homework_4_4
 #  Scenario: Verify that cancel button redirects user to "All Calendar Events" page
 #    Given user is on the login page
@@ -76,7 +72,7 @@ Feature: All calendar events
 #    And user clicks on "Create Calendar Event" button
 #    And user clicks on "Cancel" button
 #    Then user verifies that "All Calendar Events" page subtitle is displayed
-#
+
 #  @homework_4_5
 #  Scenario: Verify that difference between start and end time is exactly 1 hour
 #    Given user is on the login page
@@ -84,15 +80,15 @@ Feature: All calendar events
 #    Then user navigates to "Activities" then to "Calendar Events"
 #    And user clicks on "Create Calendar Event" button
 #    Then user verifies that end time is 1 hour after start time
-#
-#  @homework_4_6
-#  Scenario: Verify that difference between start and end time is exactly 1 hour
-#    Given user is on the login page
-#    And user logs in as store manager
-#    Then user navigates to "Activities" then to "Calendar Events"
-#    And user clicks on "Create Calendar Event" button
-#    Then user sets starts time to "9:00 PM"
-#    And user verifies that end time is "10:00 PM"
+
+  @homework_4_6
+  Scenario: Verify that difference between start and end time is exactly 1 hour
+    Given user is on the login page
+    And user logs in as store manager
+    Then user navigates to "Activities" then to "Calendar Events"
+    And user clicks on "Create Calendar Event" button
+    Then user sets starts time to "9:00 PM"
+    And user verifies that end time is "10:00 PM"
 #
 #  @homework_4_7
 #  Scenario: Verify that start and time input boxes become invisible after selecting all day event

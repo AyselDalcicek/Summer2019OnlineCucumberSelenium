@@ -57,7 +57,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.21</version> <!-- or use LATEST -->
+            <version>1.7.30</version> <!-- or use LATEST -->
         </dependency>
 
         <dependency>
@@ -89,6 +89,7 @@
                         <include>**/CucumberRunner.java</include>
                         <include>**/FailedRunner.java</include>
                     </includes>
+                    <rerunFailingTestsCount>1</rerunFailingTestsCount>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
@@ -132,16 +133,38 @@
 
                             <parallel>methods</parallel>
                             <perCoreThreadCount>false</perCoreThreadCount>
-                            <threadCountMethods>2</threadCountMethods>
+                            <threadCountMethods>4</threadCountMethods>
 <!--                            we can run 2 browsers at the same time  / parallel    -->
 
 <!--                             <include>**/Runner*.java</include>   *Runner  Runnerla baslayan her class demek-->
                             <includes>
                                 <include>**/RegressionRunner.java</include>
                             </includes>
-                            <testFailureIgnore>true</testFailureIgnore>
+                            <testFailureIgnore>false</testFailureIgnore>
                         </configuration>
                     </plugin>
+<!--When we want to run regression suit local. but when we are not gonna run local we will run in jenkins-->
+<!--                    <plugin>-->
+<!--                    <groupId>net.masterthought</groupId>-->
+<!--                    <artifactId>maven-cucumber-reporting</artifactId>-->
+<!--                    <executions>-->
+<!--                        <execution>-->
+<!--                            <id>execution</id>-->
+<!--                            <phase>verify</phase>-->
+<!--                            <goals>-->
+<!--                                <goal>generate</goal>-->
+<!--                            </goals>-->
+<!--                            <configuration>-->
+<!--                                <projectName>Cucumber HTML Reports</projectName>-->
+<!--                                <outputDirectory>${project.build.directory}/regression</outputDirectory>-->
+<!--                                <inputDirectory>${project.build.directory}</inputDirectory>-->
+<!--                                <jsonFiles>-->
+<!--                                    <param>**/cucumber*.json</param>-->
+<!--                                </jsonFiles>-->
+<!--                            </configuration>-->
+<!--                        </execution>-->
+<!--                    </executions>-->
+<!--                </plugin>-->
                 </plugins>
             </build>
         </profile>

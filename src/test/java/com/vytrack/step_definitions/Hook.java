@@ -26,14 +26,14 @@ public class Hook {
     @After
     public void teardown(Scenario scenario) {  // Scenario is an interface
         if (scenario.isFailed()) {
-            System.out.println("Test failed");
+            logger.error("Test failed");
             byte[] screenshot = ((TakesScreenshot)Driver.get()).getScreenshotAs(OutputType.BYTES); // TakesScreenshot in an interface
             scenario.embed(screenshot, "image/png", "Name of screenhot");      // getScreenshotAs ia method of the TakesScreenshot
         } else {                                                    // embed is a method of Scenario
             System.out.println("Cleanup!");
             System.out.println("Test completed!");
         }
-        System.out.println("===========================");
+        logger.info("===========================");
         //after every test, we gonna close browser
            Driver.close();
     }

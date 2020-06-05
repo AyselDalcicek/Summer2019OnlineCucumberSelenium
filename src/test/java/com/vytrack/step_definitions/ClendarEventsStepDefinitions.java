@@ -1,8 +1,10 @@
 package com.vytrack.step_definitions;
 
 import com.vytrack.pages.CalendarEventsPage;
+import com.vytrack.pages.CreateCalendarEventPage;
 import com.vytrack.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 import java.util.List;
@@ -20,6 +22,7 @@ public class ClendarEventsStepDefinitions {
 //            |INVITATION STATUS|
 
     CalendarEventsPage calendarEventsPage = new CalendarEventsPage();
+    CreateCalendarEventPage createCalendarEventPage = new CreateCalendarEventPage();
 
     @Then("user verifies that column names are displayed")
     public void user_verifies_that_column_names_are_displayed(List<String> dataTable) {
@@ -29,7 +32,7 @@ public class ClendarEventsStepDefinitions {
         Assert.assertEquals(dataTable, calendarEventsPage.getColumnNames());
     }
 
-        @Then("user verifies that following options are displayed for {string} calendar event")
+    @Then("user verifies that following options are displayed for {string} calendar event")
     public void user_verifies_that_following_options_are_displayed_for_calendar_event(String title, List<String> dataTable) {
         calendarEventsPage.waitUntilLoaderMaskDisappear();
         for (String optionText : dataTable) {
@@ -38,20 +41,19 @@ public class ClendarEventsStepDefinitions {
         }
     }
 
-
 //    @Then("user {string} following grid options")
-//    public void user_following_grid_options(String selectOrUnselect, List<String> dataTable) {
+//    public void user_following_grid_options(boolean selectOrUnselect, List<String> dataTable) {
 //        for (String gridOption : dataTable) {
-//            calendarEventsPage.selectGridSettings(gridOption, selectOrUnselect);
+//            calendarEventsPage.selectGridSetting(gridOption, selectOrUnselect);
 //        }
 //    }
 
-     /*
 
     @Then("user should see following save and close options")
     public void user_should_see_following_save_and_close_options(List<String> dataTable) {
         Assert.assertEquals(dataTable, createCalendarEventPage.getListOfSaveAndCloseOptions());
     }
+
 
     @When("user clicks on {string} button")
     public void user_clicks_on_button(String string) {
@@ -62,11 +64,11 @@ public class ClendarEventsStepDefinitions {
         }
     }
 
-    @Then("user verifies that end time is {int} hour after start time")
-    public void user_verifies_that_end_time_is_hour_after_start_time(Integer hours) {
-        calendarEventsPage.waitUntilLoaderMaskDisappear();
-        Assert.assertEquals(hours, createCalendarEventPage.getDifferenceBetweenEndTimeAndStartTime());
-    }
+//    @Then("user verifies that end time is {int} hour after start time")
+//    public void user_verifies_that_end_time_is_hour_after_start_time(Integer hours) {
+//        calendarEventsPage.waitUntilLoaderMaskDisappear();
+//        Assert.assertEquals(hours, createCalendarEventPage.getDifferenceBetweenEndTimeAndStartTime());
+//    }
 
     @Then("user sets starts time to {string}")
     public void user_sets_starts_time_to(String string) {
@@ -79,7 +81,7 @@ public class ClendarEventsStepDefinitions {
         createCalendarEventPage.waitUntilLoaderMaskDisappear();
         Assert.assertEquals(string, createCalendarEventPage.getEndTime());
     }
-
+ /*
     @Then("user {string} {string} option")
     public void user_option(String selectOrUnselect, String whatToSelect) {
         createCalendarEventPage.waitUntilLoaderMaskDisappear();
@@ -155,4 +157,5 @@ public class ClendarEventsStepDefinitions {
     }
 }
      */
+
 }
