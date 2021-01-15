@@ -6,8 +6,8 @@ import com.vytrack.utilities.ConfigurationReader;
 import com.vytrack.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.apache.log4j.Logger;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 
 import java.util.Map;
 
@@ -20,6 +20,7 @@ public class LoginStepDefinitions {
     public void user_is_on_the_login_page() {
         System.out.println("I am on the login page");
         Driver.get().get(ConfigurationReader.getProperty("url"));  // to open browser
+
     }
 
     @Then("user logs in as store manager")

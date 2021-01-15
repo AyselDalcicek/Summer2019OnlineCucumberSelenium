@@ -13,7 +13,7 @@ public class ClendarEventsStepDefinitions {
 
 
 //    And user verifies that column names are displayed
-//      |TITLE            |
+//            |TITLE            |
 //            |CALENDAR         |
 //            |START            |
 //            |END              |

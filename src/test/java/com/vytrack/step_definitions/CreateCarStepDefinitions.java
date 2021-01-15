@@ -31,7 +31,7 @@ public class CreateCarStepDefinitions {
 //      dataTable.get(0).get("Model Year") = 2020
 //    get(0) - means get data from first row (excluding column names or header)
 //    .get("Model Year") - get value of Model Year
-        @Then("user adds new car information:")
+        @Then("user adds new car information")
         public void user_adds_new_car_information(List<Map<String, String>> dataTable) {
 //            System.out.println(dataTable.get(0).get("Driver"));  // it will return Test Driver
 //            System.out.println(dataTable.get(1).get("Driver"));  // it will return Super Driver
