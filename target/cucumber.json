@@ -1,0 +1,165 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-29T09:37:46.582Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6600593000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Create new car",
+        "description": "",
+        "id": "create-new-car;create-new-car",
+        "after": [
+          {
+            "result": {
+              "duration": 711017699,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1712272000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4127174900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in as store manager",
+            "match": {
+              "location": "LoginStepDefinitions.user_logs_in_as_store_manager()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2572170000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigates to \"Fleet\" then to \"Vehicles\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fleet\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Vehicles\"",
+                  "offset": 34
+                }
+              ],
+              "location": "TopMenuStepDefinition.user_navigates_to_then_to(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3164805200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on \"Create Car\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Create Car\"",
+                  "offset": 14
+                }
+              ],
+              "location": "CreateCarStepDefinitions.user_click_on_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7445200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user adds new car information:",
+            "match": {
+              "location": "CreateCarStepDefinitions.user_adds_new_car_information(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "License Plate",
+                  "Driver",
+                  "Location",
+                  "Model Year",
+                  "Color"
+                ]
+              },
+              {
+                "cells": [
+                  "TestPlates",
+                  "Test Driver",
+                  "Washington D.C.",
+                  "2020",
+                  "Black"
+                ]
+              },
+              {
+                "cells": [
+                  "SuperMan",
+                  "Cool Driver",
+                  "Texas D.C.",
+                  "2019",
+                  "Red"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create_car"
+          }
+        ]
+      }
+    ],
+    "name": "Create new car",
+    "description": "",
+    "id": "create-new-car",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/fleet/CreateCar.feature",
+    "tags": [
+      {
+        "name": "@create_car",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

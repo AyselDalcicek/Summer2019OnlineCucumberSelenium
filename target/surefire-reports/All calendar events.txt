@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: All calendar events
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 204.987 s <<< FAILURE! - in All calendar events
+Verify column names(All calendar events)  Time elapsed: 92.419 s  <<< FAILURE!
+java.lang.AssertionError: expected:<[TITLE, CALENDAR, START, END, RECURRENT, RECURRENCE, INVITATION STATUS]> but was:<[CONTACT NAME, EMAIL, PHONE]>
+
+Verify save and close drop-down(All calendar events)  Time elapsed: 32.997 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#prependedInput"}
+  (Session info: chrome=81.0.4044.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EP6PDU8', ip: '10.0.0.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\aysel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50317}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4974b1dd0b6ef01d8c909062fff2fdea
+*** Element info: {Using=id, value=prependedInput}
+
+Verify that difference between start and end time is exactly 1 hour(All calendar events)  Time elapsed: 43.865 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#prependedInput"}
+  (Session info: chrome=81.0.4044.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EP6PDU8', ip: '10.0.0.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\aysel\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50473}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 65c904abebaf51814577e13e634ee033
+*** Element info: {Using=id, value=prependedInput}
+
